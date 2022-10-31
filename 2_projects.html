@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style-side-bar.css"/>
+    <link rel="stylesheet" href="style/style-projects.css"/>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+<!--  
+JRJFJLKSDJFLKDSJFL -->
+    <title>Projects</title>
+</head>
+<body>
+
+<!-- Simply set the `src` attribute to your MD file and win -->
+    <div id="nav-placeholder">
+        <script>
+            $.get("nav.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+            });
+            </script>
+    </div>
+    <div class="article-1">
+        <a class="article_1" href="3_AR_proj.html">
+            <div class="article_summary">An Augmented Reality Web Application for educational trails in Switzerland</div>
+        </a>
+    </div>
+    <div class="article-2">
+        <a class="article_2" href="3_climb_app.html">
+            <div class="article_summary">A climbing web application for climbing spots situated in the swiss chablais</div>
+        </a>
+    </div>
+    <div class="article-3">
+        <a class="article_3" href="3_d3_proj.html">
+            <div class="article_summary">A D3 project with a random swiss dataset</div>
+        </a>
+    </div>
+</body>
+</html>

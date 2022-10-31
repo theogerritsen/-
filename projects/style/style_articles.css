@@ -1,0 +1,13 @@
+.container{
+    width: calc(90% - 78px);
+    padding: 40px;
+    color: rgb(53, 53, 53);
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.5s ease;
+  }
+
+.sidebar.active ~ .container{
+    width: calc(90% - 240px);
+  }
