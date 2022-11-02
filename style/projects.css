@@ -67,6 +67,10 @@ body {
   background: url("../assets/projects/proj_d3.png");
   background-size: cover;
 }
+.card-image.card4{
+  background: url("../assets/projects/ar.jpeg");
+  background-size: cover;
+}
 .rgb::after{
   content:"";
   background: linear-gradient(45deg,
