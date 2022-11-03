@@ -1,22 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 :root {
   --pink: #ff4081;
+  --background: #232e33;
 }
 
 body {
   width: 100vw;
   height: 100vh;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: "cards" "content";
   align-items: center;
   justify-content: center;
   /* background: url("../assets/projects/geovis2.png"); */
-  overflow: hidden;
+  
+}
+.cards {
+  grid-area: cards;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .card{
   display: grid;
-  grid-template-columns: 300px;
+  grid-template-columns: 300px auto;
   grid-template-rows: 210px 250px 20px;
   grid-template-areas: "image" "text";
-
   font-family: Lato;
   border-radius: 18px;
   background: #1d1d1d;
@@ -91,4 +102,30 @@ body {
 }
 .js-tilt-glare{
   border-radius: 18px;
+}
+.sections {
+  grid-area: content;
+  background-color: var(--background);
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+section {
+  
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 400px;
+}
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }

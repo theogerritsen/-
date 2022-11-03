@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="../style/style.css"/>
     <link rel="stylesheet" href="../style/projects.css"/>
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <script defer src="../script/script.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js' integrity='sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A==' crossorigin='anonymous'></script>
 </head>
+
 <body> 
     <div id="navbar">
         <ul>
@@ -18,38 +21,55 @@
             <li><a href="https://github.com/theogerritsen">GitHub</a></li>
         </ul>
     </div>
-    <div class="card rgb" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
-        <div class="card-image"></div>
-        <div class="card-text">
-            <span class="date">University  of Lausanne</span>
-            <h2>Climbing Web App</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, facilis natus atque delectus commodi quaerat nostrum </p>
+    <div class="cards">
+        <div class="card rgb" data-tilt data-tilt-glare data-tilt-max-glare="0.5" id="card1">
+            <div class="card-image"></div>
+            <div class="card-text">
+                <span class="date">University  of Lausanne</span>
+                <h2>Climbing Web App</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, facilis natus atque delectus commodi quaerat nostrum </p>
+            </div>
         </div>
-    </div>
 
-    <div class="card rgb" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
-        <div class="card-image card2"></div>
-        <div class="card-text card2">
-            <span class="date">University of Lausanne</span>
-            <h2>Landslide interactive map</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, facilis natus atque delectus commodi quaerat nostrum </p>
+        <div class="card rgb" data-tilt data-tilt-glare data-tilt-max-glare="0.5" id="card2">
+            <div class="card-image card2"></div>
+            <div class="card-text card2">
+                <span class="date">University of Lausanne</span>
+                <h2>Landslide interactive map</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, facilis natus atque delectus commodi quaerat nostrum </p>
+            </div>
+        </div>
+        <div class="card rgb" data-tilt data-tilt-glare data-tilt-max-glare="0.5" id="card3">
+            <div class="card-image card3"></div>
+            <div class="card-text card3">
+                <span class="date">University of Lausanne</span>
+                <h2>Swiss Population interactive map</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, facilis natus atque delectus commodi quaerat nostrum </p>
+            </div>
+        </div>
+        <div class="card rgb" data-tilt data-tilt-glare data-tilt-max-glare="0.5" id="card4">
+            <div class="card-image card4"></div>
+            <div class="card-text card4">
+                <span class="date">University of Lausanne</span>
+                <h2>Augmented reality mobile web application</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, facilis natus atque delectus commodi quaerat nostrum </p>
+            </div>
         </div>
     </div>
-    <div class="card rgb" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
-        <div class="card-image card3"></div>
-        <div class="card-text card3">
-            <span class="date">University of Lausanne</span>
-            <h2>Swiss Population interactive map</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, facilis natus atque delectus commodi quaerat nostrum </p>
-        </div>
-    </div>
-    <div class="card rgb" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
-        <div class="card-image card4"></div>
-        <div class="card-text card4">
-            <span class="date">University of Lausanne</span>
-            <h2>Augmented reality mobile web application</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, facilis natus atque delectus commodi quaerat nostrum </p>
-        </div>
+    <div class="sections">
+    <section class="hidden" id="proj1">
+        
+    </section>
+    <section class="hidden" id="proj2">
+        Projet 2
+        <iframe src="https://theogerritsen.github.io/projet_d3/" title="Embedded Page Title" width="800" height="800"></iframe>
+    </section>
+    <section class="hidden" id="proj3">
+        Projet 3
+    </section>
+    <section class="hidden" id="proj4">
+        Projet 4
+    </section>
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js' integrity='sha512-K9tDZvc8nQXR1DMuT97sct9f40dilGp97vx7EXjswJA+/mKqJZ8vcZLifZDP+9t08osMLuiIjd4jZ0SM011Q+w==' crossorigin='anonymous'></script>
     </body>
