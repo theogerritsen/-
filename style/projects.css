@@ -8,17 +8,31 @@ body {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-areas: "cards" "content";
+  grid-template-columns: auto auto auto;
+  grid-template-areas: "intro" "cards" "content";
   align-items: center;
   justify-content: center;
   /* background: url("../assets/projects/geovis2.png"); */
   
 }
+.intro {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+  grid-area: intro;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 5em;
+}
+
 .cards {
   grid-area: cards;
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,7 +47,7 @@ body {
   background: #1d1d1d;
   color: white;
   box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-  text-align: justify;
+  text-align:left;
   transform-style: preserve-3d;
   perspective: 1000px;
   margin: 30px;
@@ -113,8 +127,8 @@ body {
 section {
   
   display: grid;
-  place-items: center;
-  align-content: center;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-areas: "titre" "iframe" "github";
   min-height: 400px;
 }
 
@@ -128,4 +142,101 @@ section {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+.logo:nth-child(2){
+  transition-delay: 300ms;
+}
+.logo:nth-child(3){
+  transition-delay: 600ms;
+}
+.logo:nth-child(4){
+  transition-delay: 9 00ms;
+}
+.frameDiv{
+  grid-area: iframe;
+  width: 100vw;
+  height: 150vh;
+  overflow: hidden;
+}
+.titre {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  align-self: center;
+  justify-self: center;
+}
+p span {
+  display: block;
+  text-align: center;
+  line-height: 5em;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.repo {
+  position: relative;
+  z-index: 1000;
+}
+.phone {
+  position: relative;
+  left: 40%;
+  width: 436px;
+  height: 778px;
+}
+.laptop{
+  position: relative;
+  left: 10%;
+  width: 80%;
+  height: 80vh;
+}
+
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 20px;
+}
+
+.arrows path {
+	stroke: #c1c3c4;
+	fill: transparent;
+	stroke-width: 4px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
 }

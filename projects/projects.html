@@ -21,54 +21,98 @@
             <li><a href="https://github.com/theogerritsen">GitHub</a></li>
         </ul>
     </div>
+    <div class="intro">
+            This section contains all my interactive map projects<br>
+            Scroll down to discover them
+            <svg class="arrows">
+                <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+    </div>
     <div class="cards">
-        <div class="card rgb" data-tilt data-tilt-glare data-tilt-max-glare="0.5" id="card1">
-            <div class="card-image"></div>
-            <div class="card-text">
-                <span class="date">University  of Lausanne</span>
-                <h2>Climbing Web App</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, facilis natus atque delectus commodi quaerat nostrum </p>
+        <div class="logo hidden">
+            <div class="card rgb" data-tilt data-tilt-glare data-tilt-max-glare="0.5" id="card1">
+                <div class="card-image"></div>
+                <div class="card-text">
+                    <span class="date">University  of Lausanne</span>
+                    <h2>Climbing Web App</h2>
+                    <p>This is a mobile web application for finding climbing spots in the swiss Chablais. It uses Leaflet for the interactive map
+                        and OTP2 (Open Trip Planner) for the routing system.
+                    </p>
+                </div>
             </div>
         </div>
 
-        <div class="card rgb" data-tilt data-tilt-glare data-tilt-max-glare="0.5" id="card2">
-            <div class="card-image card2"></div>
-            <div class="card-text card2">
-                <span class="date">University of Lausanne</span>
-                <h2>Landslide interactive map</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, facilis natus atque delectus commodi quaerat nostrum </p>
+        <div class="logo hidden">
+            <div class="card rgb" data-tilt data-tilt-glare data-tilt-max-glare="0.5" id="card2">
+                <div class="card-image card2"></div>
+                <div class="card-text card2">
+                    <span class="date">University of Geneva</span>
+                    <h2>Landslide interactive map</h2>
+                    <p>This is an interactive map to show impacts of landslides throughout the years. It uses a Mapbox baselayer,
+                        OpenLayers for the interactivene map and D3.js for the interactive barplots.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="card rgb" data-tilt data-tilt-glare data-tilt-max-glare="0.5" id="card3">
-            <div class="card-image card3"></div>
-            <div class="card-text card3">
-                <span class="date">University of Lausanne</span>
-                <h2>Swiss Population interactive map</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, facilis natus atque delectus commodi quaerat nostrum </p>
+
+        <div class="logo hidden">
+            <div class="card rgb" data-tilt data-tilt-glare data-tilt-max-glare="0.5" id="card3">
+                <div class="card-image card3"></div>
+                <div class="card-text card3">
+                    <span class="date">University of Lausanne</span>
+                    <h2>Swiss Population interactive map</h2>
+                    <p>This is an interactive map that displays a swiss population indicator using mainly D3.js. Cantons
+                        are highlightes as you pass the cursos on them and barplots are shown if you click on a canton.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="card rgb" data-tilt data-tilt-glare data-tilt-max-glare="0.5" id="card4">
-            <div class="card-image card4"></div>
-            <div class="card-text card4">
-                <span class="date">University of Lausanne</span>
-                <h2>Augmented reality mobile web application</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, facilis natus atque delectus commodi quaerat nostrum </p>
+        <div class="logo hidden">
+            <div class="card rgb" data-tilt data-tilt-glare data-tilt-max-glare="0.5" id="card4">
+                <div class="card-image card4"></div>
+                <div class="card-text card4">
+                    <span class="date">University of Lausanne</span>
+                    <h2>Augmented reality mobile web application</h2>
+                    <p>This is an augmented reality mobile web application built with Leaflet and AR.js. The user is able
+                        to do an augmented tour of Lausanne using only his mobile phone. 
+                    </p>
+                </div>
             </div>
         </div>
     </div>
     <div class="sections">
     <section class="hidden" id="proj1">
-        
+        <div class="titre">
+            <p>
+                <span>Climbing in the swiss Chablais</span>
+                <span>
+                <a class="repo" href="https://github.com/ssuter6/Geovis2">GitHub Repo</a>
+            </span>
+            </p>
+        </div>
+        <div class="frameDiv">
+            <iframe src="https://ssuter6.github.io/Geovis2/" class="phone" title="Embedded Page Title" scrolling="no"></iframe>
+        </div>
     </section>
     <section class="hidden" id="proj2">
         Projet 2
-        <iframe src="https://theogerritsen.github.io/projet_d3/" title="Embedded Page Title" width="800" height="800"></iframe>
+        <div class="frameDiv">
+            <iframe src="https://theogerritsen.github.io/interactive_landslide_map/" class="laptop" title="Embedded Page Title" scrolling="no"></iframe>
+        </div>
     </section>
     <section class="hidden" id="proj3">
         Projet 3
+        <div class="frameDiv">
+            <iframe src="https://theogerritsen.github.io/projet_d3/" class="laptop" title="Embedded Page Title" scrolling="no"></iframe>
+        </div>
     </section>
     <section class="hidden" id="proj4">
         Projet 4
+        <div class="frameDiv">
+            <iframe src="https://theogerritsen.github.io/AR_project/" class="phone" title="Embedded Page Title" scrolling="no"></iframe>
+        </div>
     </section>
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js' integrity='sha512-K9tDZvc8nQXR1DMuT97sct9f40dilGp97vx7EXjswJA+/mKqJZ8vcZLifZDP+9t08osMLuiIjd4jZ0SM011Q+w==' crossorigin='anonymous'></script>
