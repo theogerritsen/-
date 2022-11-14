@@ -127,9 +127,9 @@ body {
 section {
   
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-areas: "titre" "iframe" "github";
+  grid-template-columns: auto auto auto;
   min-height: 400px;
+  
 }
 
 .hidden{
@@ -153,8 +153,7 @@ section {
   transition-delay: 9 00ms;
 }
 .frameDiv{
-  grid-area: iframe;
-  width: 100vw;
+  grid-column-start: 2;
   height: 150vh;
   overflow: hidden;
 }
@@ -163,22 +162,15 @@ section {
   font-weight: bold;
   font-size: 30px;
   grid-column-start: 1;
-  grid-row-start: 2;
-  align-self: center;
-  justify-self: center;
-}
-p span {
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   line-height: 5em;
+  text-align: center;
+  color: var(--pink);
 }
 a {
   text-decoration: none;
   color: white;
-}
-.repo {
-  position: relative;
-  z-index: 1000;
 }
 .phone {
   position: relative;
@@ -188,8 +180,7 @@ a {
 }
 .laptop{
   position: relative;
-  left: 10%;
-  width: 80%;
+  width: 70vw;
   height: 80vh;
 }
 
