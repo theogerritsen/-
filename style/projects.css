@@ -42,7 +42,7 @@ body {
   grid-template-columns: 300px auto;
   grid-template-rows: 210px 250px 20px;
   grid-template-areas: "image" "text";
-  font-family: Lato;
+  font-family: 'Poppins', sans-serif;
   border-radius: 18px;
   background: #1d1d1d;
   color: white;

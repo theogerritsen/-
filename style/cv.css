@@ -13,13 +13,13 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 15vw 15vw 10vw 52vw;
-    grid-template-rows: 15vw 20vw 20vw;
+    grid-template-rows: 15vw auto 20vw;
     grid-template-areas: "photo qualite name name"
                         "info info slider experience"
                         "competence competence slider experience";
 }
 .items{
-    background-color: #ff4081;
+    background-color: #797979;
     border-radius: 30px;
     margin: .7vw;
 }
@@ -41,21 +41,46 @@ body {
 }
 .competence {
     grid-area: competence;
+    color: white;
+    padding: 16px;
+    line-height: 2.3em;
 }
 .slider {
     grid-area: slider;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 13% 29% 29% 29%;
+    font-size: 1.5em;
+    text-align: right;
+    padding-right: .5em;
+    color: white;
+    font-weight: bold;
 }
 .experience{
     grid-area: experience;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 13% auto 29% 29%;
+    font-size: 1.5em;
+    color: white;
+}
+.experiences {
+    text-align: left;
+    padding-left: 1em;
+}
+.experiences li {
+    font-size: 16px;
 }
 p {
     padding: 1em;
     color: white;
 }
 .phone_number, .mail, .adress, .birthday  {
+    display: inline-block;
     list-style: none;
-    margin: 0;
-	padding: 25px 0 25px 42px;
+    margin-right: 10em;
+	padding: 1.8em 0 1.8em 42px;
     background-repeat: no-repeat;
 	background-position: left center;
 	background-size: 30px;
@@ -75,3 +100,8 @@ p {
 .birthday {
     background-image: url("../assets/cv/cake.svg");
 }
+
+a {
+    text-decoration: none;
+    color: white;
+  }
