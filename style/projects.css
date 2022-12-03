@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
 :root {
   --pink: #ff4081;
   --background: #232e33;
@@ -62,6 +63,7 @@ body {
   background-size: cover;
 }
 .card-text{
+  font-family: 'Roboto', sans-serif;
   grid-area: text;
   margin: 25px;
   transform: translateZ(30px);
@@ -73,12 +75,12 @@ body {
 }
 .card-text p {
   color: grey;
-  font-size: 14px;
+  font-size: .85em;
   font-weight: 300;
 }
 .card-text h2 {
   margin-top: 0px;
-  font-size: 28px;
+  font-size: 1.2em;
 }
 /* card 2*/
 .card-image.card2 {

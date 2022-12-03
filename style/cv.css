@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 :root {
-  --pink: #ff4081;
+  --pink: #52ae7e;
   --background: #232e33;
+  --text: rgba(216, 216, 216, 0.904);
 }
+/* palette {
+    #232e33
+    #21565c
+    #238277
+    #52ae7e
+    #9cd678
+    #f9f871
+} */
 body {
     display: flex;
 }
@@ -10,18 +19,25 @@ body {
     position: relative;
     padding: 4vw;
     top: 78px;
-    height: 100vh;
     display: grid;
-    grid-template-columns: 15vw 15vw 10vw 52vw;
-    grid-template-rows: 15vw auto 20vw;
-    grid-template-areas: "photo qualite name name"
-                        "info info slider experience"
-                        "competence competence slider experience";
+    grid-template-columns: 15vw 15vw 62vw;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "photo qualite name"
+                        "info info experience"
+                        "competence competence experience"
+                        "languages languages experience"
+                        "soft soft education"
+                        "area area something";
+}
+.something {
+    grid-area: something;
+    visibility: hidden;
 }
 .items{
-    background-color: #797979;
+background: #3a484e;  
     border-radius: 30px;
     margin: .7vw;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.315);
 }
 .photo {
     grid-area: photo;
@@ -30,40 +46,102 @@ body {
 }
 .name {
     grid-area: name;
-    color: white;
+    color: rgba(216, 216, 216, 0.904);
     font-weight: bold;
     font-size: 6em;
     line-height: 15vw;
     text-align: center;
+    overflow: hidden;
+    transition: all ease-in-out 150ms;
 }
+.qualite:hover, .competence-list li:hover, .competences a:hover {
+    color: #52ae7e;
+}
+
+span{
+    background-image: linear-gradient(var(--pink), var(--pink));
+    background-repeat: no-repeat;
+    background-position: 100% 80%;
+    background-size: 0% 30%;
+    transition: background-size 500ms;
+}
+span:hover {
+    background-size: 90% 30%;
+  }
 .info {
     grid-area: info;
 }
 .competence {
     grid-area: competence;
-    color: white;
+    color: var(--text);
     padding: 16px;
     line-height: 2.3em;
-}
-.slider {
-    grid-area: slider;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 13% 29% 29% 29%;
-    font-size: 1.5em;
-    text-align: right;
-    padding-right: .5em;
-    color: white;
-    font-weight: bold;
 }
 .experience{
     grid-area: experience;
     text-align: center;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 13% auto;
     grid-template-rows: 13% auto 29% 29%;
+    grid-template-areas: "slider" "title"
+                        "slider" "kaiser"
+                        "slider" "rozen"
+                        "slider" "great";
     font-size: 1.5em;
-    color: white;
+    color: var(--text);
+}
+.education{
+    grid-area: education;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 13% auto;
+    grid-template-rows: 4em auto auto;
+    grid-template-areas: "slider" "title"
+                            "slider" "master"
+                            "slider" "bachelor";
+    font-size: 1.5em;
+    color: var(--text);
+}
+
+.language {
+    grid-area: languages;
+    color: var(--text);
+    padding: 16px;
+    line-height: 3em;
+}
+.language ul{
+    list-style-type: none;
+}
+.language li{
+    font-size: 20px;
+}
+.soft {
+    grid-area: soft;
+    padding: 16px;
+    line-height: 3em;
+    color: var(--text);
+}
+.soft ul {
+    list-style-type: none;
+}
+.soft li{
+    font-size: 20px;
+}
+.interest {
+    grid-area: area;
+    padding: 16px;
+    line-height: 3em;
+    color: var(--text);
+}
+.interest ul {
+    list-style-type: none;
+}
+.interest li{
+    font-size: 20px;
+}
+.slider-list {
+    text-align: right;
+    color: #52ae7e;
 }
 .experiences {
     text-align: left;
@@ -74,8 +152,13 @@ body {
 }
 p {
     padding: 1em;
-    color: white;
+    color: var(--text);
 }
+.educations {
+    text-align: left;
+    padding-left: 1em;
+}
+
 .phone_number, .mail, .adress, .birthday  {
     display: inline-block;
     list-style: none;
@@ -86,7 +169,7 @@ p {
 	background-size: 30px;
 }
 .competence-list {
-    color: white;
+    color: var(--text);
 }
 .phone_number {
     background-image: url("../assets/cv/mobile.svg");
@@ -103,5 +186,5 @@ p {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--text);
   }
