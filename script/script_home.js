@@ -31,7 +31,7 @@ let github = document.getElementById("GitHub")
 let cv = document.getElementById("CV")
 const promises = [];
 let lines = d3.select("line");
-promises.push(d3.json("../assets/home/menu_suisse.geojson"));
+promises.push(d3.json("assets/home/menu_suisse.geojson"));
 
 
 Promise.all(promises).then(function(values) {
