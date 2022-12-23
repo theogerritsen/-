@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+body {
+    overflow-x: hidden;
+}
+path {
+    fill:#192024;
+    stroke-width: 1px;
+    stroke: white;
+    cursor: pointer;
+}
+.selected {
+    fill: #52ae7e;
+    stroke-width: 1px;
+    stroke: white;
+}
+.svg-container {
+    grid-area: map;
+    margin-top: 100px;
+}
+.content {
+
+    top: 0;
+    z-index: 2;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+    grid-template-areas: "info"
+                        "map";
+    justify-items: center;
+}
+.menu-text {
+    color: white;
+    
+}
+.names {
+    position: absolute;
+}
+#mydiv{
+    font-weight: bold;
+    grid-area: info;
+    position: absolute;
+    
+    font-size: 1.6em;
+    width: 200px;
+    text-align: center;
+    transition: all ease-in-out 250ms;
+}
+#rect {
+    position: absolute;
+    transition: all ease-in-out 250ms;
+    border-radius: 5px;
+    pointer-events: none;
+}
+.construction {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 200vh;
+    background-color: #000000d5;
+    z-index: 1000;
+    transition: all ease 200ms;
+}
+.construction.active{
+    left: 200vw;
+}
+.panneau {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: calc(50vh - 100px);
+    left: calc(50vw - 100px);
+
+}
+.construction p{
+    text-align: center;
+    padding-top: calc(50vh + 100px);
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+}
+.construction button{
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    top: calc(50vh + 200px);
+    left: calc(50vw - 100px);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    border-color: white;
+    border-width: 5px;
+    font-size: 2em;
+    transition: ease 200ms;
+    text-decoration: none;
+    border: 4px solid white;
+}
+button:hover {
+    cursor: pointer;
+    background-color: #192024;
+    color: #52ae7e;
+    border: 4px solid #52ae7e;
+}
+
